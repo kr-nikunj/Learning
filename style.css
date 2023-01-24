@@ -1,0 +1,129 @@
+:root {
+    --background: #341c61;
+    --whitetext: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+.navmain{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+}
+
+
+.navmain li{
+    color: var(--whitetext);
+    list-style-type: none;
+    padding-bottom: 6px;
+}
+
+.navmain .Discription img{
+    height: 50px;
+    width: 50px;    
+}
+
+.Discription{
+    width: 35%;
+    margin-right: 10%;
+}
+
+.Discription .firstname{
+    display: flex;
+}
+
+.Discription h3{
+    padding-left: 5px;
+    font-size: 30px;
+    margin-top: 5px;
+    color:var(--whitetext);
+}
+
+.Discription p{
+    padding-left: 5px;
+    font-size: 20px;
+    color: var(--whitetext);
+}
+
+.Discription .bottomname{
+    display: flex;
+}
+
+.bottomname h4{
+    color: var(--whitetext);
+}
+
+.bottomname img{
+    margin-left: 1rem;
+    width: 10px;
+    height: 10px;
+}
+
+.navmain{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    padding-bottom: 2px;
+}
+
+.discover{
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.decentraweb{
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 150px;
+    padding-right: 50px;
+    color: var(--whitetext);
+}
+
+.social a{
+    padding-right: 40px;
+}
+
+@media (max-width: 412px){
+    #navmain{
+        display: block;
+    }
+
+    #Discription{
+        padding: 20px;
+        width: 340px;
+    }
+
+    #social{
+        padding: 20px;
+        display: block;
+    }
+    
+    .symbols {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #explore{
+        margin-bottom: 60px;
+    }
+
+    #Discover{
+        margin-bottom: 60px;
+    }
+
+    #SDWEB{
+        margin-bottom: 60px;
+    }
+
+}
