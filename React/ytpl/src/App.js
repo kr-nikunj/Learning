@@ -20,6 +20,7 @@ import Table from './Components/Table';
 // import Form from './Components/Form';
 import LifecycleA from './Components/LifecycleA';
 import RefsDemo from './Components/RefsDemo';
+import Stylecom from './Components/Styled-component/Stylecom';
 
 
 
@@ -77,9 +78,10 @@ function App() {
 
     {/* <ParentComp /> */}
 
-    <RefsDemo/>
+    {/* <RefsDemo/> */}
 
-  
+    <Stylecom />
+    
     </div>
   );
 }
