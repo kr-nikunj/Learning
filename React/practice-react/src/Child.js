@@ -3,9 +3,9 @@ import React, { Component, useState } from 'react'
 class Child extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {value: 'gcdd'};
 
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -13,21 +13,26 @@ class Child extends Component {
     this.setState({value: event.target.value});
   }
 
-  handleSubmit(event) {
+  handleSubmit() {
     // alert('A name was submitted: ' + this.state.value);
     this.togglechange(this.state.value);
-    event.preventDefault();
+    // event.preventDefault();
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      // <form onSubmit={this.handleSubmit}>
+      <div>
+
         <label>
           Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" value={this.state.value} onChange={(e)=> this.handleChange(e)} />
         </label>
-        <input type="submit" value="Submit" />
-      </form>
+          {this.state.value}
+        <button onClick={()=> this.props.changename(this.state.value)}>Submit</button>
+      </div>
+        /* <input type="submit" value="Submit" /> */
+      // </form>
     );
   }
 }

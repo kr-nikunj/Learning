@@ -7,22 +7,23 @@ class Parent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          name_change: "Hello, world",
+          name: "Hello, world",
         };
+        this.togglechange = this.togglechange.bind(this);
       }
 
-    togglechange = (child_data) => {
-    this.setState({name_change: child_data});
-    console.log(child_data);
+    togglechange(child_data){
+      console.log(child_data);
+      this.setState({name :child_data});
     }
 
-
+    
     render() {
-      const {name_change} = this.state;
+      // const {name_change} = this.state;
     return (
         <div>
-            {name_change}
-            <Child name_change={name_change}/>
+            {this.state.name}
+            <Child changename={this.togglechange}/>
         </div>
     )
   }
